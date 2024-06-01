@@ -1,0 +1,1054 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <title>22880041 - IT CONFERANCE</title>
+        <!-- Required meta tags -->
+        <meta charset="utf-8" />
+        <meta
+            name="viewport"
+            content="width=device-width, initial-scale=1, shrink-to-fit=no"
+        />
+        <!--Favicon-->
+        <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
+        <!-- Fontawesome-->
+        <script src="https://kit.fontawesome.com/c3b64efc12.js" crossorigin="anonymous"></script>
+        <!-- web1 form-->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Changa+One:ital@0;1&display=swap" rel="stylesheet">
+        
+        
+        <!-- Bootstrap CSS v5.2.1 -->
+        <link
+            href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+            rel="stylesheet"
+            integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+            crossorigin="anonymous"
+        />
+        <!--Web1 CSS-->
+        <link rel="stylesheet" href="22880041.css">
+
+        <style>
+          body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f5f5f5;
+          }
+          #event-list {
+            list-style: none;
+            padding: 0;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: flex-start; 
+            flex-direction: row; 
+          }
+          .event-item {
+            width: calc(25% - 20px); 
+            background-color: #fff;
+            border-radius: 5px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            margin: 0 10px 20px; 
+            padding: 20px;
+            box-sizing: border-box; 
+          }
+          .event-item strong {
+            font-size: 18px;
+            color: #333;
+          }
+          .event-item p {
+            margin: 10px 0;
+            color: #666;
+          }
+       
+          .color-list {
+            display: none; 
+          }
+          .color-option {
+            width: 30px;
+            height: 30px;
+            border-radius: 50%;
+            margin: 0 5px;
+            cursor: pointer;
+            border: 2px solid transparent;
+          }
+          .color-option.active {
+            border-color: #333; 
+          }
+      
+          .event-item:nth-child(even) {
+            background-color: #2FA0D5; 
+          }
+          .event-item:nth-child(odd) {
+            background-color:#FA97C2; 
+          }
+        </style>
+    </head>
+
+    <body>
+        <header class="container">
+            <nav
+                class="navbar navbar-expand-sm navbar-light"
+            >
+                <div class="container">
+                    <a class="navbar-brand" href="index.html"><img src="images/logo.png" alt="Web1 Logo" class="logo-small" ></a>
+
+                    <button
+                        class="navbar-toggler d-lg-none"
+                        type="button"
+                        data-bs-toggle="collapse"
+                        data-bs-target="#Menu-header"
+                        aria-controls="#Menu-header"
+                        aria-expanded="false"
+                        aria-label="Toggle navigation"
+                    >
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="Menu-header">
+                        <ul class="navbar-nav ms-auto mt-2 mt-lg-0">
+                            <li class="nav-item">
+                                <a class="nav-link active" href="index.html" aria-current="page"
+                                    >Home
+                                    <span class="visually-hidden">(current)</span></a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="AddEvent.html">Event Add</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="About.html">About</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="FAQ.html">FAQ</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="Blogs.html">Blogs</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="Contacts.html">Contacts</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#" data-bs-toggle="modal" data-bs-target="#modalLogin">Login</a>
+                                 <a class="nav-link linkLogout" href="#" onclick="logout()" style="display: none;">Log out</a>
+                            </li>
+                        </ul>
+                        <form class="d-flex my-2 my-lg-0 border rounded-pill" id="formSearch" method="GET" action="Search.html">
+                            <input
+                                class="form-control ms-3 border-0"
+                                type="text"
+                                placeholder="Search" name="keyword" id="keyword" required
+                            />
+                            <button
+                                class="btn my-2 my-sm-0 border-0"
+                                type="submit"
+                            >
+                                <i class="fas fa-search"></i>
+                            </button>
+                        </form>
+                    </div>
+                </div>
+            </nav>
+            
+            <!-- place navbar here -->
+        </header>
+        <main></main>
+        
+
+
+        <div id="content">
+<
+            
+        <!--Banner-->
+        <section class="container-fluid" id="banner">
+            <div class="container text-white text-center ">
+                <div id="carouselId" class="carousel slide" data-bs-ride="carousel">
+                    <ol class="carousel-indicators" style="list-style: none;">
+                        <li
+                            data-bs-target="#carouselId"
+                            data-bs-slide-to="0"
+                            class="active"
+                            aria-current="true"
+                            aria-label="First slide"
+                            
+                        ><span>1</span></li>
+                        
+                        <li
+                            data-bs-target="#carouselId"
+                            data-bs-slide-to="1"
+                            aria-label="Second slide"
+                        ><span>2</span></li>
+                        <li
+                            data-bs-target="#carouselId"
+                            data-bs-slide-to="2"
+                            aria-label="Third slide"
+                        ><span>3</span></li>
+                    </ol>
+                    <div class="carousel-inner" role="listbox">
+                        <div class="carousel-item active">
+                            <h1>Web conferencing<br>
+                            for everyone</h1>
+                            <a href="FAQ.html" class="btn text-bold text-uppercase text-white rounded-4 px-4">See more</a>
+                        </div>
+                        <div class="carousel-item">
+                            <h1>22880041<br>
+                                Tran Quoc Hiep</h1>
+                        </div>
+                        <div class="carousel-item">
+                            <h1>Nhap mon cong nghe phan mem<br>
+                                DTTX - Hoc ky - Nam hoc 2024</h1>
+                        </div>
+                    </div>
+                    
+                </div>
+                
+            </div>
+        </section>
+        <section class="container-fluid">
+            <div class="intro jobs-intro hasOverly" style=
+            "background-image: url(img/home/main-banner.png); background-position: center center; padding:190px 0 138px; background-size: cover;">
+              <div class="dtable hw100">
+                <div class="dtable-cell hw100">
+                  <div class="container text-center">
+                    <h1 class="intro-title animated fadeInDown">International
+                    Conference Alerts 2024</h1>
+                    <div class="col-sm-11 mx-auto">
+                      <form action="searchfresult" class="m-none">
+                        <input type="hidden" name="_token" value=
+                        "PTi6pthXsP5U22zeuTIWIKq0mHblcUoUq4WGsNZI">
+                        <div class="row search-row animated fadeInUp">
+                          <div class=
+                          "col-xl-3 col-sm-3 search-col relative locationicon text-left">
+                            <label>Country</label>
+                            <div class="search-col-inner">
+                              <div class="search-col-input">
+                                <img src="images/10.png" class=
+                                "icon-location-2 icon-append"> <select class=
+                                "form-control" name="country">
+                                  <option value="null" selected="selected">
+                                    Select Country
+                                  </option>
+                                  <option value="bahrain">
+                                    Bahrain
+                                  </option>
+                                  <option value="Bangladesh">
+                                    Bangladesh
+                                  </option>
+                                  <option value="Bhutan">
+                                    Bhutan
+                                  </option>
+                                  <option value="Cambodia">
+                                    Cambodia
+                                  </option>
+                                  <option value="China">
+                                    China
+                                  </option>
+                                  <option value="Hong-kong">
+                                    Hong Kong
+                                  </option>
+                                  <option value="India">
+                                    India
+                                  </option>
+                                  <option value="Indonesia">
+                                    Indonesia
+                                  </option>
+                                  <option value="Iran">
+                                    Iran
+                                  </option>
+                                  <option value="Iraq">
+                                    Iraq
+                                  </option>
+                                  <option value="Israel">
+                                    Israel
+                                  </option>
+                                  <option value="Japan">
+                                    Japan
+                                  </option>
+                                  <option value="Jordan">
+                                    Jordan
+                                  </option>
+                                  <option value="South-korea">
+                                    South Korea
+                                  </option>
+                                  <option value="Kuwait">
+                                    Kuwait
+                                  </option>
+                                  <option value="Malaysia">
+                                    Malaysia
+                                  </option>
+                                  <option value="Maldives">
+                                    Maldives
+                                  </option>
+                                  <option value="Mongolia">
+                                    Mongolia
+                                  </option>
+                                  <option value="Burma">
+                                    Myanmar (Burma)
+                                  </option>
+                                  <option value="Nepal">
+                                    Nepal
+                                  </option>
+                                  <option value="Oman">
+                                    Oman
+                                  </option>
+                                  <option value="Pakistan">
+                                    Pakistan
+                                  </option>
+                                  <option value="Philippines">
+                                    Philippines
+                                  </option>
+                                  <option value="Palestinian-territories">
+                                    Palestinian Territories
+                                  </option>
+                                  <option value="Qatar">
+                                    Qatar
+                                  </option>
+                                  <option value="Saudi-arabia">
+                                    Saudi Arabia
+                                  </option>
+                                  <option value="Singapore">
+                                    Singapore
+                                  </option>
+                                  <option value="Sri-lanka">
+                                    Sri Lanka
+                                  </option>
+                                  <option value="Syria">
+                                    Syria
+                                  </option>
+                                  <option value="Taiwan">
+                                    Taiwan
+                                  </option>
+                                  <option value="Thailand">
+                                    Thailand
+                                  </option>
+                                  <option value="UAE">
+                                    UAE
+                                  </option>
+                                  <option value="Uzbekistan">
+                                    Uzbekistan
+                                  </option>
+                                  <option value="Vietnam">
+                                    Vietnam
+                                  </option>
+                                  <option value="Algeria">
+                                    Algeria
+                                  </option>
+                                  <option value="Egypt">
+                                    Egypt
+                                  </option>
+                                  <option value="Ethiopia">
+                                    Ethiopia
+                                  </option>
+                                  <option value="Gambia">
+                                    Gambia
+                                  </option>
+                                  <option value="Ghana">
+                                    Ghana
+                                  </option>
+                                  <option value="Kenya">
+                                    Kenya
+                                  </option>
+                                  <option value="Lesotho">
+                                    Lesotho
+                                  </option>
+                                  <option value="Liberia">
+                                    Liberia
+                                  </option>
+                                  <option value="Malawi">
+                                    Malawi
+                                  </option>
+                                  <option value="Mali">
+                                    Mali
+                                  </option>
+                                  <option value="Mauritius">
+                                    Mauritius
+                                  </option>
+                                  <option value="Morocco">
+                                    Morocco
+                                  </option>
+                                  <option value="Mozambique">
+                                    Mozambique
+                                  </option>
+                                  <option value="Namibia">
+                                    Namibia
+                                  </option>
+                                  <option value="Nigeria">
+                                    Nigeria
+                                  </option>
+                                  <option value="Seychelles">
+                                    Seychelles
+                                  </option>
+                                  <option value="Sierra-leone">
+                                    Sierra Leone
+                                  </option>
+                                  <option value="Somalia">
+                                    Somalia
+                                  </option>
+                                  <option value="South-africa">
+                                    South Africa
+                                  </option>
+                                  <option value="Sudan">
+                                    Sudan
+                                  </option>
+                                  <option value="Uganda">
+                                    Uganda
+                                  </option>
+                                  <option value="Zambia">
+                                    Zambia
+                                  </option>
+                                  <option value="Zimbabwe">
+                                    Zimbabwe
+                                  </option>
+                                  <option value="Andorra">
+                                    Andorra
+                                  </option>
+                                  <option value="Armenia">
+                                    Armenia
+                                  </option>
+                                  <option value="Austria">
+                                    Austria
+                                  </option>
+                                  <option value="Belarus">
+                                    Belarus
+                                  </option>
+                                  <option value="Belgium">
+                                    Belgium
+                                  </option>
+                                  <option value="Bulgaria">
+                                    Bulgaria
+                                  </option>
+                                  <option value="Croatia">
+                                    Croatia
+                                  </option>
+                                  <option value="Cyprus">
+                                    Cyprus
+                                  </option>
+                                  <option value="Czech-republic">
+                                    Czech Republic
+                                  </option>
+                                  <option value="Denmark">
+                                    Denmark
+                                  </option>
+                                  <option value="Estonia">
+                                    Estonia
+                                  </option>
+                                  <option value="Finland">
+                                    Finland
+                                  </option>
+                                  <option value="France">
+                                    France
+                                  </option>
+                                  <option value="Georgia">
+                                    Georgia
+                                  </option>
+                                  <option value="Germany">
+                                    Germany
+                                  </option>
+                                  <option value="Greece">
+                                    Greece
+                                  </option>
+                                  <option value="Hungary">
+                                    Hungary
+                                  </option>
+                                  <option value="Iceland">
+                                    Iceland
+                                  </option>
+                                  <option value="Ireland">
+                                    Ireland
+                                  </option>
+                                  <option value="Italy">
+                                    Italy
+                                  </option>
+                                  <option value="Lithuania">
+                                    Lithuania
+                                  </option>
+                                  <option value="Luxembourg">
+                                    Luxembourg
+                                  </option>
+                                  <option value="Macedonia">
+                                    Macedonia
+                                  </option>
+                                  <option value="Malta">
+                                    Malta
+                                  </option>
+                                  <option value="Netherlands">
+                                    Netherlands
+                                  </option>
+                                  <option value="Norway">
+                                    Norway
+                                  </option>
+                                  <option value="Poland">
+                                    Poland
+                                  </option>
+                                  <option value="Portugal">
+                                    Portugal
+                                  </option>
+                                  <option value="Romania">
+                                    Romania
+                                  </option>
+                                  <option value="Russia">
+                                    Russia
+                                  </option>
+                                  <option value="Serbia">
+                                    Serbia
+                                  </option>
+                                  <option value="Slovakia">
+                                    Slovakia
+                                  </option>
+                                  <option value="Slovenia">
+                                    Slovenia
+                                  </option>
+                                  <option value="Spain">
+                                    Spain
+                                  </option>
+                                  <option value="Sweden">
+                                    Sweden
+                                  </option>
+                                  <option value="Switzerland">
+                                    Switzerland
+                                  </option>
+                                  <option value="Turkey">
+                                    Turkey
+                                  </option>
+                                  <option value="Ukraine">
+                                    Ukraine
+                                  </option>
+                                  <option value="UK">
+                                    United Kingdom
+                                  </option>
+                                  <option value="Vatican-city">
+                                    Vatican City
+                                  </option>
+                                  <option value="Bahamas">
+                                    Bahamas
+                                  </option>
+                                  <option value="barbados">
+                                    Barbados
+                                  </option>
+                                  <option value="Canada">
+                                    Canada
+                                  </option>
+                                  <option value="Costa-rica">
+                                    Costa Rica
+                                  </option>
+                                  <option value="Cuba">
+                                    Cuba
+                                  </option>
+                                  <option value="Dominica">
+                                    Dominica
+                                  </option>
+                                  <option value="Greenland">
+                                    Greenland
+                                  </option>
+                                  <option value="Haiti">
+                                    Haiti
+                                  </option>
+                                  <option value="Honduras">
+                                    Honduras
+                                  </option>
+                                  <option value="Jamaica">
+                                    Jamaica
+                                  </option>
+                                  <option value="Mexico">
+                                    Mexico
+                                  </option>
+                                  <option value="Panama">
+                                    Panama
+                                  </option>
+                                  <option value="USA">
+                                    United States of America
+                                  </option>
+                                  <option value="Argentina">
+                                    Argentina
+                                  </option>
+                                  <option value="Bolivia">
+                                    Bolivia
+                                  </option>
+                                  <option value="Brazil">
+                                    Brazil
+                                  </option>
+                                  <option value="Chile">
+                                    Chile
+                                  </option>
+                                  <option value="Colombia">
+                                    Colombia
+                                  </option>
+                                  <option value="Ecuador">
+                                    Ecuador
+                                  </option>
+                                  <option value="Guyana">
+                                    Guyana
+                                  </option>
+                                  <option value="Paraguay">
+                                    Paraguay
+                                  </option>
+                                  <option value="Peru">
+                                    Peru
+                                  </option>
+                                  <option value="Suriname">
+                                    Suriname
+                                  </option>
+                                  <option value="Uruguay">
+                                    Uruguay
+                                  </option>
+                                  <option value="Venezuela">
+                                    Venezuela
+                                  </option>
+                                </select>
+                              </div>
+                            </div>
+                          </div>
+                          <div class=
+                          "col-xl-3 col-sm-3 search-col relative text-left">
+                            <label>Topic</label>
+                            <div class="search-col-inner">
+                              <div class="search-col-input">
+                                <img src="images/12.png" class=
+                                "icon-location-2 icon-append"> <select class=
+                                "form-control" name="topic" id="eventtopic">
+                                  <option value="null">
+                                      Artificial Intelligence (AI) and Machine Learning (ML)
+                                  </option>
+                                  <option value="Engineering">
+                                      Cybersecurity
+                                  </option>
+                                  <option value="Business">
+                                      Cloud Computing
+                                  </option>
+                                  <option value="Education">
+                                      Data Science and Big Data
+                                  </option>
+                                  <option value="Health and Medicine">
+                                      Internet of Things (IoT)
+                                  </option>
+                                  <option value="Interdisciplinary">
+                                      Blockchain and Cryptocurrency
+                                  </option>
+                                  <option value="Mathematics">
+                                      DevOps and Continuous Integration/Continuous Deployment (CI/CD)
+                                  </option>
+                                  <option value="Physical and Life Sciences">
+                                      Software Development Methodologies
+                                  </option>
+                                  <option value="Regional Studies">
+                                      User Experience (UX) and User Interface (UI) Design
+                                  </option>
+                                  <option value=
+                                  "Social Science and Humanities">
+                                       IT Infrastructure and Networkin
+                                  </option>
+                                  <option value="Engineering and Technology">
+                                      IT Governance and Compliance
+                                  </option>
+                                  <option value="Engineering and Technology">
+                                      Mobile and Web Development
+                                  </option>
+                                </select>
+                              </div>
+                            </div>
+                          </div>
+                          <div class=
+                          "col-xl-3 col-sm-3 search-col relative text-left">
+                            <label>Sub Topic</label>
+                            <div class="search-col-inner">
+                              <div class="search-col-input">
+                                <img src="images/13.png" class=
+                                "icon-location-2 icon-append"> <select class=
+                                "form-control" name="subtopic" id="subtopic">
+                                  <option value="null">
+                                    Sub Topic
+                                  </option>
+                                </select>
+                              </div>
+                            </div>
+                          </div>
+                          <div class=
+                          "col-xl-2 col-sm-2 search-col relative text-left">
+                            <label>Month & Year</label>
+                            <div class="search-col-inner">
+                              <div class="search-col-input">
+                                <img src="images/14.png" class=
+                                "icon-location-2 icon-append"> <select class=
+                                "form-control" name="month">
+                                  <option value="">
+                                    Select
+                                  </option>
+                                  <option value="May-2024">
+                                    May-2024
+                                  </option>
+                                  <option value="June-2024">
+                                    June-2024
+                                  </option>
+                                  <option value="July-2024">
+                                    July-2024
+                                  </option>
+                                  <option value="August-2024">
+                                    August-2024
+                                  </option>
+                                  <option value="September-2024">
+                                    September-2024
+                                  </option>
+                                  <option value="October-2024">
+                                    October-2024
+                                  </option>
+                                  <option value="November-2024">
+                                    November-2024
+                                  </option>
+                                  <option value="December-2024">
+                                    December-2024
+                                  </option>
+                                  <option value="January-2025">
+                                    January-2025
+                                  </option>
+                                  <option value="March-2025">
+                                    March-2025
+                                  </option>
+                                  <option value="March-2025">
+                                    March-2025
+                                  </option>
+                                  <option value="April-2025">
+                                    April-2025
+                                  </option>
+                                  <option value="May-2025">
+                                    May-2025
+                                  </option>
+                                  <option value="June-2025">
+                                    June-2025
+                                  </option>
+                                </select>
+                              </div>
+                            </div>
+                          </div>
+                          
+                          <div class="col-xl-1 col-sm-1 search-col">
+                            <br><br>
+                            <button
+                                 class="btn my-2 my-sm-0 border-0"
+                                  onclick="window.location.href = 'Search.html';" 
+                                 type="button" 
+                                    >
+                               <i class="fas fa-search"></i>
+                                </button>
+
+                          </div>
+                          
+                        </div>
+                      </form>
+                      
+                    </div>
+                    
+                  </div>
+                </div>
+              </div>
+            </div>
+          
+          
+            <div class="container" style="position: relative;top: -96px;">
+              <div class="rounded rounded-pill shadow-sm w-none" style=
+              "border: 1px solid #3030307d; background-color: #ecf1f5 !important; width: 99%; margin-bottom: 20px; height: 42px;">
+                <form action="Search.html">
+                  <div class="input-group">
+                    <input type="search" name="keyword" placeholder=
+                    "Search by Topics, Country, City" aria-describedby=
+                    "button-addon1" class="form-control border-0 bg-light"
+                    style=
+                    "padding: 0px; background-color: #ecf1f5 !important; height: 40px; font-weight: 500; padding-left: 9px;">
+                    <div class="col-xl-1 col-sm-1 search-col">
+                        
+                        <button
+                             class="btn my-2 my-sm-0 border-0"
+                              onclick="window.location.href = 'Search.html';" 
+                             type="button" 
+                                >
+                           <i class="fas fa-search"></i>
+                            </button>
+
+                      </div>
+                  </div>
+                </form>
+              </div>
+        </section>
+       
+       
+              <!--danh sách-->
+        <!-- Danh sách chọn màu -->
+  <div class="color-list">
+    <div class="color-option" style="background-color: #FFC107;"></div>
+    <div class="color-option" style="background-color: #2196F3;"></div>
+  </div>
+  <ul id="event-list"></ul>
+
+  <script>
+    const eventList = document.getElementById('event-list');
+
+    // Function to fetch and display event data
+    function fetchEventData(endpoint) {
+      fetch(`http://localhost:3000/${endpoint}`)
+        .then(response => response.json())
+        .then(event => {
+          const listItem = document.createElement('li');
+          listItem.classList.add('event-item');
+          listItem.innerHTML = `
+            <strong>${event.name}</strong><br>
+            <p>Location: ${event.location}</p>
+            <p>Deadline: ${event.deadline}</p>
+            <p>Date: ${event.date}</p>
+            <p>Notification: ${event.notification}</p>
+          `;
+          eventList.appendChild(listItem);
+        })
+        .catch(error => console.error('Error fetching event data:', error));
+    }
+
+    // Loop through endpoints and fetch event data
+    for (let i = 0; i < 38; i++) {
+      fetchEventData(i);
+    }
+  </script>
+
+          
+
+
+
+        </section>
+        <!--About us-->
+        <section class="container-fluid" id="aboutus">
+            <div class="container">
+                <div class="row py-5">
+                    <div class="col-lg-9 col-md-8 col-sm-12 ">
+                        <h1 class="text-white">About Us</h1>
+                        <div class="text-black-50">
+                            <img class="float-start me-3" src="images/icon-about.png" alt="About us">
+                             <p>Lorem ipsum dolor sit amet 
+                                consectetur adipisicing elit. Blanditisis
+                                recusandae alias harum asperiores.
+                                Dolorem iusto officiis natus,
+                                reprehenderit placeat sint et quod nulla
+                                inventore sit magnam architecto
+                                perspiciatis ipsam necessistatibus.    
+                            </p>
+                             <p>
+                                Lorem ipsum dolor sot amet
+                                consectetur adipiscing elit.
+                                Dignissimos debitis lebore dolores
+                                repellat aliquid laborum, sequi
+                                expedita. 
+                                <a href="About.html" class="btn btn-link readmore mt-0">Read more</a>
+                             </p>
+                             
+                        </div>
+                    </div>
+                    <div class="col-lg-3 codl-md-4 col-sm-12">
+                        <form action="#" id="formSignup" class="border border-3 p-3 
+                        rounded-4 overflow-auto">
+                            <h3 class="text-white text-center">Newsletter<br>
+                                Sign Up
+                            </h3>
+                            <p class="text-black-50 mb-2">Please, write an e-mail:</p>
+                           <input type="email" name="email_signup" id="email-signup" class="form-control mt-0 mb-2">
+                           <button type="submit" class="btn text-white float-end text-uppercase rounded-4 px-4" ><h4 class="my-0">Sign up</h4></button>
+                        </form>
+                       
+                    </div>
+                </div>
+            </div>
+
+        </section>
+        <!--News-->
+       <section class="container py-5" id="news">
+      
+       </section>
+
+    </div>
+       <!--footer-->
+       <footer class="text-center container-fluid text-white py-3">
+        <ul
+            class="nav justify-content-center py-3" id="menu-footer"
+        >
+            <li class="nav-item">
+                <a class="nav-link active" href="index.html" aria-current="page"
+                    >Home</a
+                >
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="AddEvent.html">Event Add</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="About.html">About</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="FAQ.html">FAQ</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="Blogs.html">Blogs</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="Contacts.html">Contacts</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#" data-bs-toggle="modal" data-bs-target="#modalLogin">Login</a>
+                <a class="nav-link linkLogout" href="#" onclick="logout()" style="display: none;">Log out</a>
+            </li>
+        </ul>
+        <p class="text-white-50">Copyright &copy; 2024 by Tran Quoc Hiep - 22880041</p>
+       </footer>
+      
+ 
+       <!-- Modal Body -->
+      
+       <div
+        class="modal fade"
+        id="modalLogin"
+        tabindex="-1"
+        data-bs-backdrop="static"
+        data-bs-keyboard="false"
+        
+        role="dialog"
+        aria-labelledby="modalTitleId"
+        aria-hidden="true"
+       >
+        <div
+            class="modal-dialog modal-dialog-scrollable modal-dialog-centered modal-sm"
+            role="document"
+        >
+            <div class="modal-content">
+                <div class="modal-header">
+                    
+                    <button
+                        type="button"
+                        class="btn-close"
+                        data-bs-dismiss="modal"
+                        aria-label="Close"
+                    ></button>
+                </div>
+                <div id="loggedInContent" style="display: none;">
+                    
+                    <p>Welcome, <span id="loggedInUsername"></span>!</p>
+                    <button onclick="logout()">Logout</button>
+                </div>
+                
+             
+                <div id="loginFormContent">
+                    <div class="modal-body">
+                        <form action="#" method="post" id="formLogin" onsubmit="login(event)">
+                            <h3 class="text-center">Login Form</h3>
+                            <div class="mb-3">
+                                <input type="text" name="username" id="username" placeholder="Username" class="form-control" required>
+                            </div>
+                            <div class="mb-3">
+                                <input type="password" name="password" id="password" placeholder="Password" class="form-control" required>
+                            </div>
+                          
+                            <button type="submit" class="form-control btn">Login</button>
+                        </form>
+                    </div>
+                    <div class="modal-footer justify-content-center">
+                        <div class="text-danger" id="errorMessage"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+       </div>
+       
+       <!-- Optional: Place to the bottom of scripts -->
+       <script>
+        const myModal = new bootstrap.Modal(
+            document.getElementById("modalId"),
+            options,
+        );
+       </script>
+       
+        <!-- Bootstrap JavaScript Libraries -->
+
+        <script
+            src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+            integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+            crossorigin="anonymous"
+        ></script>
+
+        <script
+            src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
+            integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
+            crossorigin="anonymous"
+        ></script>
+
+        <!--HandlebarsJS-->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.7.8/handlebars.min.js" integrity="sha512-E1dSFxg+wsfJ4HKjutk/WaCzK7S2wv1POn1RRPGh8ZK+ag9l244Vqxji3r6wgz9YBf6+vhQEYJZpSjqWFPg9gg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+        <script src="js/22880041.js"></script>    
+        
+    
+        <script id="products-template" type="text/x-handlebars-template">
+    <div class="row text-center py-5">
+        {{#each data}}
+        <div class="col-lg-3 col-md-6 col-sm-12">
+            <img src="{{imagepath}}" alt="{{name}}"
+                onmouseover="setActiveImagepath(this,'{{imagepath}}')"
+                onmouseout="setActiveImagepath(this,'{{imagepath}}',false)">
+            <h3>{{name}}</h3>
+            <p class="text-black-50">{{summary}}</p>
+            <a class="readmore btn btn-link mt-0 pt-0" 
+                onclick="loadData('products/{{id}}','details-template','content')"
+                href="#">Read more</a>
+        </div>
+        {{/each}}
+    </div>
+
+    </script> 
+
+    <script id="news-template" type="text/x-handlebars-template">
+        <h1 class="text-black-10">
+            News
+        </h1>
+        <div class="row py-3">
+            {{#each data}}
+            <div class="col">
+                <div class="float-start me-3">
+                    <div class="date text-white text-center rounded-4 py-1">
+                        <h3>
+                            {{date}}
+                        </h3>
+                    </div>
+                    <a href="#" class="btn btn-link readmore ps-0"
+                    onclick="loadData('news/{{id}}','details-template','content')"
+                    >Read more</a>
+                </div>
+                <div>
+                    <h3>{{name}} </h3>
+                    <p class="text-black-50">{{summary}}</p>
+                </div>
+            </div>
+            {{/each}}
+        </div>
+    </script>
+    
+    <script id="details-template" type="text/x-handlebars-template">
+        <section class="container-fluid" id="banner-small">   </section>
+        {{#each data}}
+        <section class="container py-5">
+            <h1 class="pb-3">{{name}}</h1>
+            <div class="text-black-50">{{{description}}}</div>
+        </section>
+        {{/each}}
+    </script>
+
+        <script>
+             checkLogin();
+        loadData('products','products-template', 'products');
+        loadData('news', 'news-template', 'news');
+
+        function setActiveImagepath(img, imagepath, isActive=true) {
+        if (isActive) {
+            img.src = imagepath.replace('.','-active.');
+        } else {
+            img.src = imagepath;
+        }
+        var nextElement = img.nextElementSibling;
+        if (nextElement) {
+            nextElement.classList.toggle('web1-text-blue');
+        }
+    }
+        </script>
+
+
+
+
+    </body>
+</html>

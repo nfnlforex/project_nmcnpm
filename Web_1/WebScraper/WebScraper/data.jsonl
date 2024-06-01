@@ -1,0 +1,38 @@
+{"id": 0, "name": "ADT", "location": "Piscataway, New Jersey, USA", "deadline": "24/31 May 2024", "date": "14-16 October 2024", "notification": "19 July 2024"}
+{"id": 1, "name": "APLAS", "location": "Kyoto, Japan", "deadline": "31 May 2024", "date": "22-25 October 2024", "notification": "2 August 2024"}
+{"id": 2, "name": "GD", "location": "Vienna, Austria", "deadline": "31 May / 7 June 2024", "date": "18-20 September 2024", "notification": "20 July 2024"}
+{"id": 3, "name": "LSFA", "location": "Goiânia, Brazil", "deadline": "31 May / 7 June 2024", "date": "18-20 September 2024", "notification": "7 August 2024"}
+{"id": 4, "name": "IOTSMS", "location": "Malmö, Sweden", "deadline": "1 June 2024", "date": "2-5 September 2024", "notification": "15 July 2024"}
+{"id": 5, "name": "AAIM", "location": "Dallas, Texas. USA", "deadline": "1 June 2024", "date": "21-23 September 2024", "notification": "1 July 2024"}
+{"id": 6, "name": "RuleML+RR", "location": "Bucharest, Romania", "deadline": "1/7 June 2024", "date": "16-18 September 2024", "notification": "19 July 2024"}
+{"id": 7, "name": "JAF", "location": "Passau, Germany", "deadline": "2 June 2024", "date": "9-11 September 2024", "notification": "2 July 2024"}
+{"id": 8, "name": "iFM", "location": "Manchester, UK", "deadline": "3/10 June 2024", "date": "13-15 November 2024", "notification": "5 August 2024"}
+{"id": 9, "name": "PoS", "location": "Pune, India", "deadline": "5 June 2024", "date": "20 August 2024", "notification": "23 June 2023"}
+{"id": 10, "name": "ALGOWIN", "location": "Egham, United Kingdom", "deadline": "7 June 2024", "date": "5-6 September 2024", "notification": "1 August 2024"}
+{"id": 11, "name": "SEFM", "location": "Aveiro, Portugal", "deadline": "7/14 June 2024", "date": "4-8 November 2024", "notification": "15 August 2024"}
+{"id": 12, "name": "ICTCS", "location": "Torino, Italy", "deadline": "9 June 2024", "date": "11-13 September 2024", "notification": "14 July 2024"}
+{"id": 13, "name": "TAP", "location": "Milan, Italy", "deadline": "12/14 June 2024", "date": "9–10 September 2024", "notification": "5 July 2024"}
+{"id": 14, "name": "ICTAC", "location": "Bangkok, Thailand", "deadline": "14/21 June 2024", "date": "25-29 November 2024", "notification": "1 September 2024"}
+{"id": 15, "name": "MLCS", "location": "Vilnius, Lithuania", "deadline": "15 June 2024", "date": "9-13 September 2024", "notification": "15 July 2024"}
+{"id": 16, "name": "LAP", "location": "Dubrovnik, Croatia", "deadline": "15 June 2024", "date": "23-27 September 2024", "notification": "1 July 2024"}
+{"id": 17, "name": "WISE", "location": "Doha, Qatar", "deadline": "20/30 June 2024", "date": "2-5 December 2024", "notification": "30 August 2024"}
+{"id": 18, "name": "TIME", "location": "Montpellier, France", "deadline": "21 June 2024", "date": "28-30 October 2024", "notification": "2 August 2024"}
+{"id": 19, "name": "LPNMR", "location": "Dallas, Texas, USA", "deadline": "21/28 June 2024", "date": "11-14 October 2024", "notification": "28 July 2024"}
+{"id": 20, "name": "RP", "location": "Vienna, Austria", "deadline": "24/26 June 2024", "date": "25-27 September 2024", "notification": "30 July 2024"}
+{"id": 21, "name": "IPEC", "location": "Egham, United Kingdom", "deadline": "26/30 June 2024", "date": "4-6 September 2024", "notification": "5 August 2024"}
+{"id": 22, "name": "ISAAC", "location": "Sydney, Australia", "deadline": "28 June 2024", "date": "8-12 December 2024", "notification": "2 September 2024"}
+{"id": 23, "name": "ATMOS", "location": "Egham, United Kingdom", "deadline": "30 June 2024", "date": "5-6 September 2024", "notification": "31 July 2024"}
+{"id": 24, "name": "ALGOCLOUD", "location": "Egham, United Kingdom", "deadline": "1 July 2024", "date": "2-3 September 2024", "notification": "31 July 2024"}
+{"id": 25, "name": "ICTAI", "location": "Herndon, Virginia, USA", "deadline": "1 July 2024", "date": "28-30 October 2024", "notification": "18 August 2024"}
+{"id": 26, "name": "WAOA", "location": "Egham, United Kingdom", "deadline": "3 July 2024", "date": "5-6 September 2024", "notification": "31 July 2024"}
+{"id": 27, "name": "FSTTCS", "location": "Gandhinagar, Gujarat, India", "deadline": "5 July 2024", "date": "16-18 December 2024", "notification": "16 September 2024"}
+{"id": 28, "name": "SODA", "location": "New Orleans, Lousiana, USA", "deadline": "5 July 2024", "date": "12-15 January 2025", "notification": "6 September 2024"}
+{"id": 29, "name": "NMR", "location": "Hanoi, Vietnam", "deadline": "7/12 July 2024", "date": "2-4 November 2024", "notification": "1 September 2024"}
+{"id": 30, "name": "ICLP", "location": "Dallas, Texas, USA", "deadline": "8 July 2024", "date": "11-17 October 2024", "notification": "22 July 2024"}
+{"id": 31, "name": "VSTTE", "location": "Prague, Czech Republic", "deadline": "18 July 2024", "date": "14-15 October 2024", "notification": "29 August 2024"}
+{"id": 32, "name": "ALENEX", "location": "New Orleans, Lousiana, USA", "deadline": "18 July 2024", "date": "12-13 January 2025", "notification": "31 Ausust 2024"}
+{"id": 33, "name": "CSL", "location": "Amsterdam, The Netherlands", "deadline": "18/23 July 2024", "date": "10-14 February 2025", "notification": "27 October 2024"}
+{"id": 34, "name": "ICDCN", "location": "Hyderabad, India", "deadline": "25 July 2024", "date": "4-7 January 2025", "notification": "27 September 2024"}
+{"id": 35, "name": "TERMGRAPH", "location": "post-proceedings", "deadline": "1 August 2024", "date": "7 April 2024", "notification": "15 September 2024"}
+{"id": 36, "name": "SOSA", "location": "New Orleans, Lousiana, USA", "deadline": "5/8 August 2024", "date": "13-14 January 2025", "notification": "October 2024"}
+{"id": 37, "name": "WALCOM", "location": "Chengdu, China", "deadline": "22 September 2024", "date": "28 February - 2 March 2025", "notification": "8 November 2024"}

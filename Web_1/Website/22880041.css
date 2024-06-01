@@ -1,0 +1,183 @@
+:root{
+    --web1-pink:#FA97C2;
+    --web1-blue:#2FA0D5;
+    --web1-green:#73C926;
+}
+body {
+    font-family: 'Trebuchet MS', Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    line-height: 20px;
+}
+
+h1, h2, h3, h4 {
+    font-family: 'Changa One', cursive;
+    font-weight: 400;
+}
+
+h1 {
+    font-size: 60px;
+    line-height: 60px;
+    font-weight: 900;
+}
+/*logo*/
+.logo-small {
+    width: 200px; /* Adjust this value to make the logo smaller */
+    height: 70px; /* Maintain the aspect ratio */
+    margin-bottom: 50px;
+}
+/*header*/
+#Menu-header a{
+    display: block;
+    padding: 0 1.25rem;
+    font-weight: bold;
+    color: black;
+    font-family: "Changa One",cursive;
+    margin-bottom: 50px;
+    margin-top: 50px;
+}
+#Menu-header .nav-item a.active {
+    color: var(--web1-blue);
+}
+
+#formSearch i{
+    color: var(--web1-green);
+}
+#formSearch input{
+    width: 8rem;
+}
+#submit-event {
+    display: block;
+    margin: 0 auto;
+    background-color:var(--web1-blue); /* Màu xanh đậm */
+    color: #fff; /* Màu chữ trắng */
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+/*banner*/
+#banner{
+    background-image:url('images/bg-banner.gif') ;
+
+    background-size: cover; /* Ensures the image covers the entire banner area */
+    background-repeat: no-repeat; /* Prevents the image from repeating */
+    background-position: center; /* Centers the image in the banner */
+    width: 100%; /* Ensures the banner spans the full width of the container */
+    height: 400px; /* Set a height for the banner as needed */
+}
+#banner > div{
+    background: url(images/logo_bg.png) left top no-repeat, url(images/search_bg.png) right top no-repeat;
+    padding: 5rem 0 3rem 0;
+}
+#banner a{
+    background-color: var(--web1-pink);
+    font-family: 'Changa One' cursive;
+    font-size: 2rem;
+}
+#banner .carousel-item {
+    min-height: 15rem;
+}
+#banner .carousel-indicators li{
+    width: 1.2rem;
+    height: 1.2rem;
+    border-radius: 1.2rem;
+    border: none;
+    margin: 0 0.25rem;
+    position: relative;
+}
+#banner .carousel-indicators li span{
+    position: absolute;
+    top: 0.3rem;
+    left: 0.3rem;
+    width: 0.6rem;
+    height: 0.6rem;
+    border-radius: 0.6rem;
+    border: none;
+    text-align: left;
+    text-indent: -9999px;
+}
+#banner .carousel-indicators li.active span{
+    background-color: var(--web1-green);
+}
+#banner-small{
+    background-image: url('images/bg-banner.gif');
+    padding: 5px;
+}
+.web1-text-blue{
+    color: var(--web1-blue);
+}
+/*Products*/
+.readmore{
+    color: var(--web1-blue);
+    margin-top:-4px !important;
+}
+/*About us*/
+#aboutus{
+    background-color: var(--web1-pink);
+}
+/*formSignup*/
+#formSignup{
+    border-style: dashed !important;
+    border-color: rgba(0, 0, 0, 0.5) !important;
+}
+/*News*/
+#news .date{
+    background-color: var(--web1-green);
+    width: 6rem;
+    padding: 1.5rem;
+}
+/*foooter*/
+footer{
+    background-image: url('images/bg-footer.gif');
+}
+#menu-footer a{
+    color:white;
+    font-weight: bold;
+    font-family:'changa One' cursive;
+    display:block;
+    padding:0 2rem;
+}
+#menu-footer a.active{
+    color:var(--web1-pink);
+}
+/*Model Login*/
+#formLogin button[type='submit'] {
+    background-color: var(--web1-blue);
+    color: white;
+}
+#testimonials {
+    background-color: var(--web1-pink);
+}
+
+#testimonials .col {
+    background-image: url('images/quot.png');
+    background-repeat: no-repeat;
+    background-position: left top;
+    padding-left: 3rem;
+}
+#about-us h4{
+    color: black;
+}
+/*Blogs*/
+#blogs-categories li {
+    list-style-type: none;
+    background: url(images/marker1.png) 0 0.25rem no-repeat;
+    padding: 0 0 0.75rem 1.5rem;
+
+}
+/*map*/
+#map{
+    height: 400px;
+    width: 100%;
+}
+.bread-bg {
+    background-image: url(images/bg-banner.gif); 
+    background-size: 100%; /* Đảm bảo hình nền được hiển thị đúng tỉ lệ */
+    background-position: center; /* Căn giữa hình nền */
+    color: #fff; /* Màu chữ trắng */
+    padding: 90px 50px; /* Khoảng cách lề bên trong của phần tử */
+}
+
+.bread-bg .container {
+    text-align: center; /* Căn giữa nội dung trong container */
+}
